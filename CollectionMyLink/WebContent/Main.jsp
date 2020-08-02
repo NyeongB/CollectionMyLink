@@ -19,9 +19,11 @@
 <style type="text/css">
 	
 	.tbwid_10{width:10%;}	/* Number */
-	.tbwid_20{width:25%;}	/* Title */
-	.tbwid_30{width:55%;}	/* Link(url) */
-	.tbwid_40{width:10%;} 	/* Date */
+	.tbwid_20{width:15%;}	/* Title */
+	.tbwid_30{width:50%;}	/* Link(url) */
+	.tbwid_40{width:15%;} 	/* Date */
+	.tbwid_40{width:5%;} 
+	.tbwid_40{width:5%;} 
 
 </style>
 
@@ -51,6 +53,12 @@
 								<th class="tbwid_40">
 									Date
 								</th>
+								<th class="tbwid_50">
+									Add
+								</th>																
+								<th class="tbwid_60">
+									Del							
+								</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -67,8 +75,16 @@
 								<td>
 									Default
 								</td>
+								<td>
+									<button type="button" class="btn btn-default">
+									</button>
+								</td>
+								<td>
+									<button type="button" class="btn btn-default">
+									</button>
+								</td>
 							</tr>
-							<tr class="table-active">
+							<tr>
 								<td>
 									1
 								</td>
@@ -79,51 +95,18 @@
 									01/04/2012
 								</td>
 								<td>
-									Approved
+									Default
+								</td>
+								<td>
+									<button type="button" class="btn btn-default">
+									</button>
+								</td>
+								<td>
+									<button type="button" class="btn btn-default">
+									</button>
 								</td>
 							</tr>
-							<tr class="table-success">
-								<td>
-									2
-								</td>
-								<td>
-									TB - Monthly
-								</td>
-								<td>
-									02/04/2012
-								</td>
-								<td>
-									Declined
-								</td>
-							</tr>
-							<tr class="table-warning">
-								<td>
-									3
-								</td>
-								<td>
-									TB - Monthly
-								</td>
-								<td>
-									03/04/2012
-								</td>
-								<td>
-									Pending
-								</td>
-							</tr>
-							<tr class="table-danger">
-								<td>
-									4
-								</td>
-								<td>
-									TB - Monthly
-								</td>
-								<td>
-									04/04/2012
-								</td>
-								<td>
-									Call in to confirm
-								</td>
-							</tr>
+							
 						</tbody>
 					</table>
 				</div>

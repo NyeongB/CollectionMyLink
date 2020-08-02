@@ -10,11 +10,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class HomeController {
 
 		
-	@RequestMapping(value = "/main.action", method = RequestMethod.GET)
+	@RequestMapping(value = "/main.action", method= {RequestMethod.GET, RequestMethod.POST})
 	public String showMain(Model model)
 	{
-		
-		
 		return "/Main.jsp";
 	}
 }
