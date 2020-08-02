@@ -86,7 +86,7 @@
 							<C:forEach var="dto" items="${list }">
 							<tr>
 								<td>
-									${dto.link_num }
+									${dto.rnum }
 								</td>
 								<td>
 									${dto.link_title }

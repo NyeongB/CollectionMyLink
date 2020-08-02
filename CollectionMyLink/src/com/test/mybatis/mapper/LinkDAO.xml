@@ -8,8 +8,17 @@
 	
 	<select id="list" resultType="com.link.controller.LinkDTO">
 	
-		SELECT LINK_NUM, LINK_TITLE, LINK_URL, LINK_DATE FROM TBL_LINK
+		<!-- SELECT LINK_NUM, LINK_TITLE, LINK_URL, LINK_DATE FROM TBL_LINK -->
 		
+		<!-- 페이징 처리 -->
+		<![CDATA[
+		SELECT *
+		FROM
+		(
+		SELECT DATA.*, ROWNUM AS RNUM FROM
+		(SELECT LINK_NUM, LINK_TITLE, LINK_URL, LINK_DATE FROM TBL_LINK)DATA)
+		WHERE 1 <= RNUM AND RNUM <= 100
+		]]>
 	</select>
 	
 	<insert id="add">

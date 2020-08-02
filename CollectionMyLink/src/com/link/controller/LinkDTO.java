@@ -2,7 +2,17 @@ package com.link.controller;
 
 public class LinkDTO
 {
-	private String link_num, link_title, link_url, link_date;
+	private String link_num, link_title, link_url, link_date, rnum;
+
+	public String getRnum()
+	{
+		return rnum;
+	}
+
+	public void setRnum(String rnum)
+	{
+		this.rnum = rnum;
+	}
 
 	public String getLink_num()
 	{
