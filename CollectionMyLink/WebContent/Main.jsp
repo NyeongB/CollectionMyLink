@@ -10,11 +10,9 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <link rel="stylesheet" type="text/css" href="css/main.css">
-<!-- 합쳐지고 최소화된 최신 CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-
-<!-- 부가적인 테마 -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
 
 <style type="text/css">
 	
@@ -27,8 +25,23 @@
 
 </style>
 
-<!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+<script type="text/javascript">
+
+	$(document).ready(function()
+	{
+		$("#btn").click(function()
+		{
+			
+			//alert("Test");
+			$("#add").submit();
+		});
+	});
+
+</script>
+
 </head>
 <body>
 	<div class="container-fluid">
@@ -38,6 +51,12 @@
 				<div class="col-md-2">
 				</div>
 				<div class="col-md-8">
+					<form action="add.action" class="form-inline" id="add" method="post">
+						
+							<input type="text" class="form-control" id="input">
+							<button type="button" class="btn" id="btn">입력</button>
+						
+					</form>
 					<table class="table">
 						<thead>
 							<tr>

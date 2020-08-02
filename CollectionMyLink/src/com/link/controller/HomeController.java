@@ -25,5 +25,16 @@ public class HomeController {
 		
 		return "/Main.jsp";
 	}
+	
+	@RequestMapping(value = "/add.action", method= {RequestMethod.GET, RequestMethod.POST})
+	public String add(Model model)
+	{
+		
+		ILinkDAO dao = SqlSession.getMapper(ILinkDAO.class);
+		
+		model.addAttribute("list", dao.list());
+		
+		return "/Main.jsp";
+	}
 }
 	
