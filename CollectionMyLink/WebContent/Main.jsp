@@ -22,8 +22,8 @@
 	.tbwid_20{width:15%;}	/* Title */
 	.tbwid_30{width:50%;}	/* Link(url) */
 	.tbwid_40{width:15%;} 	/* Date */
-	.tbwid_40{width:5%;} 
-	.tbwid_40{width:5%;} 
+	.tbwid_50{width:5%;} 	/* add */
+	.tbwid_60{width:5%;} 	/* delete */
 
 </style>
 
@@ -62,18 +62,19 @@
 							</tr>
 						</thead>
 						<tbody>
+							<C:forEach var="dto" items="${list }">
 							<tr>
 								<td>
-									1
+									${dto.link_num }
 								</td>
 								<td>
-									TB - Monthly
+									${dto.link_title }
 								</td>
 								<td>
-									01/04/2012
+									<a href="${dto.link_url }">${dto.link_url }</a>
 								</td>
 								<td>
-									Default
+									${dto.link_date }
 								</td>
 								<td>
 									<button type="button" class="btn btn-default">
@@ -84,28 +85,8 @@
 									</button>
 								</td>
 							</tr>
-							<tr>
-								<td>
-									1
-								</td>
-								<td>
-									TB - Monthly
-								</td>
-								<td>
-									01/04/2012
-								</td>
-								<td>
-									Default
-								</td>
-								<td>
-									<button type="button" class="btn btn-default">
-									</button>
-								</td>
-								<td>
-									<button type="button" class="btn btn-default">
-									</button>
-								</td>
-							</tr>
+							</C:forEach>
+							
 							
 						</tbody>
 					</table>
