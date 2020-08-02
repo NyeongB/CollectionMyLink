@@ -16,3 +16,4 @@ public class HomeController {
 		return "/Main.jsp";
 	}
 }
+	
