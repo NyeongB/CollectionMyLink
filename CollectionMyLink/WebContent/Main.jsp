@@ -16,6 +16,15 @@
 <!-- 부가적인 테마 -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
 
+<style type="text/css">
+	
+	.tbwid_10{width:10%;}	/* Number */
+	.tbwid_20{width:25%;}	/* Title */
+	.tbwid_30{width:55%;}	/* Link(url) */
+	.tbwid_40{width:10%;} 	/* Date */
+
+</style>
+
 <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 </head>
@@ -30,17 +39,17 @@
 					<table class="table">
 						<thead>
 							<tr>
-								<th>
+								<th class="tbwid_10">
 									#
 								</th>
-								<th>
-									Product
+								<th class="tbwid_20">
+									Title
 								</th>
-								<th>
-									Payment Taken
+								<th class="tbwid_30">
+									Link
 								</th>
-								<th>
-									Status
+								<th class="tbwid_40">
+									Date
 								</th>
 							</tr>
 						</thead>
