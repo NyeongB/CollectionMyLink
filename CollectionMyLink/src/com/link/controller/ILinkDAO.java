@@ -6,5 +6,5 @@ public interface ILinkDAO
 {
 	public ArrayList<LinkDTO> list();
 	
-	public void add();
+	public void add(LinkDTO dto);
 }

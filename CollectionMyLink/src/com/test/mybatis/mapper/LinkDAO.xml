@@ -12,5 +12,10 @@
 		
 	</select>
 	
+	<insert id="add">
+		INSERT INTO TBL_LINK(LINK_NUM, LINK_TITLE, LINK_URL, LINK_DATE)
+		 VALUES(SEQ_LINK_NUM.NEXTVAL, #{link_title}, #{link_url}, SYSDATE)
+	</insert>
+	
 	
 </mapper>  

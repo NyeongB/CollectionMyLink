@@ -1,5 +1,7 @@
 package com.link.controller;
 
+import javax.servlet.http.HttpServletRequest;
+
 import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -27,10 +29,22 @@ public class HomeController {
 	}
 	
 	@RequestMapping(value = "/add.action", method= {RequestMethod.GET, RequestMethod.POST})
-	public String add(Model model)
+	public String add(Model model, HttpServletRequest request)
 	{
 		
 		ILinkDAO dao = SqlSession.getMapper(ILinkDAO.class);
+		
+		String link = request.getParameter("link");
+		String title = request.getParameter("title");
+		
+		System.out.println("link : " + link);
+		System.out.println("title : "+ title);
+		LinkDTO dto = new LinkDTO();
+		dto.setLink_title(title);
+		dto.setLink_url(link);
+		
+		dao.add(dto);
+		
 		
 		model.addAttribute("list", dao.list());
 		

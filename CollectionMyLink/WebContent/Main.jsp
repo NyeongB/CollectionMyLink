@@ -52,8 +52,10 @@
 				</div>
 				<div class="col-md-8">
 					<form action="add.action" class="form-inline" id="add" method="post">
-						
-							<input type="text" class="form-control" id="input">
+							Title : 
+							<input type="text" class="form-control" id="title" name="title">
+							Link : 
+							<input type="text" class="form-control" id="link" name="link">
 							<button type="button" class="btn" id="btn">입력</button>
 						
 					</form>
@@ -90,7 +92,7 @@
 									${dto.link_title }
 								</td>
 								<td>
-									<a href="${dto.link_url }">${dto.link_url }</a>
+									<a href="http://${dto.link_url }">${dto.link_url }</a>
 								</td>
 								<td>
 									${dto.link_date }
