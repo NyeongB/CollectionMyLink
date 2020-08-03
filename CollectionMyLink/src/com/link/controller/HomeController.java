@@ -50,5 +50,23 @@ public class HomeController {
 		
 		return "/Main.jsp";
 	}
+	
+	@RequestMapping(value = "/del.action", method= {RequestMethod.GET, RequestMethod.POST})
+	public String del(Model model, HttpServletRequest request)
+	{
+		
+		ILinkDAO dao = SqlSession.getMapper(ILinkDAO.class);
+		
+		String link_num = request.getParameter("link_num");
+		
+		//System.out.println(link_num);
+		
+		dao.del(link_num);
+		
+		
+		model.addAttribute("list", dao.list());
+		
+		return "/Main.jsp";
+	}
 }
 	

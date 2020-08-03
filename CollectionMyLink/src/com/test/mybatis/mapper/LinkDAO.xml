@@ -26,5 +26,9 @@
 		 VALUES(SEQ_LINK_NUM.NEXTVAL, #{link_title}, #{link_url}, SYSDATE)
 	</insert>
 	
+	<delete id="del">
+		DELETE FROM TBL_LINK WHERE LINK_NUM = #{link_num}
+	</delete>
+	
 	
 </mapper>  

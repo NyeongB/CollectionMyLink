@@ -39,9 +39,12 @@
 		});
 	});
 	
-	function delete()
+	function del(num)
 	{
-		alert("delete");
+		//alert(num);
+		//alert("delete");
+		if(confirm('정말 삭제하시겠습니까?'))
+		location.href='del.action?link_num='+num;
 	}
 
 </script>
@@ -99,7 +102,7 @@
 									${dto.link_date }
 								</td>
 								<td>
-									<button type="button" class="btn btn-default" onclick="delete()">
+									<button type="button" class="btn btn-default" onclick='del(${dto.link_num})'>
 									Delete
 									</button>
 								</td>
