@@ -19,9 +19,8 @@
 	.tbwid_10{width:10%;}	/* Number */
 	.tbwid_20{width:15%;}	/* Title */
 	.tbwid_30{width:50%;}	/* Link(url) */
-	.tbwid_40{width:15%;} 	/* Date */
-	.tbwid_50{width:5%;} 	/* add */
-	.tbwid_60{width:5%;} 	/* delete */
+	.tbwid_40{width:20%;} 	/* Date */
+	.tbwid_50{width:5%;} 	/* delete */
 
 </style>
 
@@ -39,6 +38,11 @@
 			$("#add").submit();
 		});
 	});
+	
+	function delete()
+	{
+		alert("delete");
+	}
 
 </script>
 
@@ -75,11 +79,8 @@
 									Date
 								</th>
 								<th class="tbwid_50">
-									Add
+									Del
 								</th>																
-								<th class="tbwid_60">
-									Del							
-								</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -92,19 +93,17 @@
 									${dto.link_title }
 								</td>
 								<td>
-									<a href="http://${dto.link_url }">${dto.link_url }</a>
+									<a href="${dto.link_url }">${dto.link_url }</a>
 								</td>
 								<td>
 									${dto.link_date }
 								</td>
 								<td>
-									<button type="button" class="btn btn-default">
+									<button type="button" class="btn btn-default" onclick="delete()">
+									Delete
 									</button>
 								</td>
-								<td>
-									<button type="button" class="btn btn-default">
-									</button>
-								</td>
+								
 							</tr>
 							</C:forEach>
 							
