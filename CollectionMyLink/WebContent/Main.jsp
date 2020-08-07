@@ -17,8 +17,8 @@
 
 <style type="text/css">
 	
-	.tbwid_10{width:10%;}	/* Number */
-	.tbwid_20{width:15%;}	/* Title */
+	.tbwid_10{width:5%;}	/* Number */
+	.tbwid_20{width:20%;}	/* Title */
 	.tbwid_30{width:50%;}	/* Link(url) */
 	.tbwid_40{width:20%;} 	/* Date */
 	.tbwid_50{width:5%;} 	/* delete */
