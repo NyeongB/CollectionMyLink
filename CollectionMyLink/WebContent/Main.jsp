@@ -34,16 +34,12 @@
 	{
 		$("#btn").click(function()
 		{
-			
-			//alert("Test");
 			$("#add").submit();
 		});
 	});
 	
 	function del(num)
 	{
-		//alert(num);
-		//alert("delete");
 		if(confirm('정말 삭제하시겠습니까?'))
 		location.href='del.action?link_num='+num;
 	}
