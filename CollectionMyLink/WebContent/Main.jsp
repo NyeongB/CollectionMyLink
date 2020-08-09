@@ -1,5 +1,5 @@
 <%@ page contentType="text/html; charset=UTF-8"%>
-<%@ taglib prefix="C" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%
 	request.setCharacterEncoding("UTF-8");
 	String cp = request.getContextPath();
@@ -84,7 +84,7 @@
 							</tr>
 						</thead>
 						<tbody>
-							<C:forEach var="dto" items="${list }">
+							<c:forEach var="dto" items="${list }">
 							<tr>
 								<td>
 									${dto.rnum }
@@ -105,7 +105,7 @@
 								</td>
 								
 							</tr>
-							</C:forEach>
+							</c:forEach>
 							
 							
 						</tbody>
