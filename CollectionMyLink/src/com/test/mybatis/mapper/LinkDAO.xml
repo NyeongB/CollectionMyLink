@@ -17,7 +17,7 @@
 		(
 		SELECT DATA.*, ROWNUM AS RNUM FROM
 		(SELECT LINK_NUM, LINK_TITLE, LINK_URL, LINK_DATE FROM TBL_LINK ORDER BY LINK_DATE desc)DATA)
-		WHERE 1 <= RNUM AND RNUM <= 100
+		WHERE #{start} <= RNUM AND RNUM <= #{end}
 		]]>
 	</select>
 	
@@ -29,6 +29,11 @@
 	<delete id="del">
 		DELETE FROM TBL_LINK WHERE LINK_NUM = #{link_num}
 	</delete>
+	
+	<select id="getCount" resultType="java.lang.Integer">
+		SELECT COUNT(*)
+		FROM TBL_LINK
+	</select>
 	
 	
 </mapper>  
