@@ -79,7 +79,7 @@ public class HomeController {
 		
 		//model.addAttribute("list", dao.list());
 		
-		return "/Main.jsp";
+		return "/main.action";
 	}
 	
 	@RequestMapping(value = "/del.action", method= {RequestMethod.GET, RequestMethod.POST})
@@ -97,7 +97,7 @@ public class HomeController {
 		
 		//model.addAttribute("list", dao.list());
 		
-		return "/Main.jsp";
+		return "/main.action";
 	}
 }
 	

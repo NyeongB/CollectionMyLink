@@ -53,8 +53,10 @@
 		<div class="col-md-12">
 			<div class="row">
 				<div class="col-md-2">
+				<!-- weather information section -->
 				</div>
 				<div class="col-md-8">
+					<!-- form enter error..  -->
 					<form action="add.action" class="form-inline" id="add" method="post">
 							Title : 
 							<input type="text" class="form-control" id="title" name="title">
