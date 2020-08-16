@@ -54,7 +54,24 @@
 			<div class="row">
 				<div class="col-md-2">
 				<!-- weather information section -->
-				</div>
+				    <div class="thumbnail">
+				      <img src="http://13.231.82.47:8090/ccn_images/ralation.jpg" alt="...">
+				      <div class="caption">
+				        <h3>Information</h3>
+				        <p>notepad</p>
+				        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+				      </div>
+				    </div>
+					<!-- weather information section -->
+				    <div class="thumbnail">
+				      <img src="http://13.231.82.47:8090/ccn_images/ralation.jpg" alt="...">
+				      <div class="caption">
+				        <h3>Information</h3>
+				        <p>notepad</p>
+				        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+				      </div>
+				    </div>				    
+				  </div>
 				<div class="col-md-8">
 					<!-- form enter error..  -->
 					<form action="add.action" class="form-inline" id="add" method="post">
