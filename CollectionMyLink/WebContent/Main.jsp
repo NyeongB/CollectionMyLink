@@ -62,15 +62,7 @@
 				        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
 				      </div>
 				    </div>
-					<!-- weather information section -->
-				    <div class="thumbnail">
-				      <img src="http://13.231.82.47:8090/ccn_images/ralation.jpg" alt="...">
-				      <div class="caption">
-				        <h3>Information</h3>
-				        <p>notepad</p>
-				        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-				      </div>
-				    </div>				    
+					<!-- end informtion -->				    
 				  </div>
 				<div class="col-md-8">
 					<!-- form enter error..  -->
