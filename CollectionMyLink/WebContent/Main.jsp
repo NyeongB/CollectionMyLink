@@ -143,6 +143,8 @@
 				
 				
 				<div class="col-md-2">
+				<!-- notepad -->
+				<textarea rows="10" cols="20"></textarea>
 				</div>
 			</div>
 		</div>
