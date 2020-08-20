@@ -19,7 +19,7 @@ public class Paging
 		int dataCount = count;
 
 		// 전체 페이지 수 구하기
-		int numPerPage = 15;
+		int numPerPage = 10;
 		int totalPage = util.getPageCount(numPerPage, dataCount);
 
 		// 전체 페이지 수 보다 현재 표시할 페이지가 큰 경우
@@ -51,7 +51,7 @@ public class Paging
 		int dataCount = count;
 
 		// 전체 페이지 수 구하기
-		int numPerPage = 15;
+		int numPerPage = 10;
 		int totalPage = util.getPageCount(numPerPage, dataCount);
 
 		// 전체 페이지 수 보다 현재 표시할 페이지가 큰 경우
@@ -85,7 +85,7 @@ public class Paging
 		int dataCount = count;
 
 		// 전체 페이지 수 구하기
-		int numPerPage = 15;
+		int numPerPage = 10;
 		int totalPage = util.getPageCount(numPerPage, dataCount);
 
 		// 전체 페이지 수 보다 현재 표시할 페이지가 큰 경우
